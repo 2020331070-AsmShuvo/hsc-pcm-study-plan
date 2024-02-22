@@ -27,42 +27,87 @@
     <title>Tams Library</title>
 </head>
 <body>
-    <!-- header section starts -->
+    <div class="container mx-auto">
+        <!-- header section starts -->
         <!-- navbar section starts -->
-            <header>
-               <nav>
-                <div class="navbar bg-base-100">
-                    <div class="navbar-start">
-                      <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                        </div>
-                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                          <li class="Mono font-semibold text-xl btn m-2 bg-blue-500 text-white"><a>PHY</a></li>
-                          <li class="Mono font-semibold text-xl btn m-2 bg-blue-500 text-white"><a>CHEM</a></li>
-                          <li class="Mono font-semibold text-xl btn m-2 bg-blue-500 text-white"><a>MATH</a></li>
-                        </ul>
-                      </div>
-                      <a class="btn btn-ghost font-extrabold italic Mono text-4xl text-blue-500">TAM'S LIBRARY 
-                        <span class="text-red-600 ml-2">
-                            <i class="fa-regular fa-face-smile-wink"></i>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="navbar-center hidden lg:flex">
-                      <ul class="menu menu-horizontal px-1">
-                        <li class="Mono font-semibold text-xl btn m-2 bg-blue-500 text-white"><a>PHY</a></li>
-                          <li class="Mono font-semibold text-xl btn m-2 bg-blue-500 text-white"><a>CHEM</a></li>
-                          <li class="Mono font-semibold text-xl btn m-2 bg-blue-500 text-white"><a>MATH</a></li>
-                      </ul>
-                    </div>
-                    <div class="navbar-end">
-                      <!-- <a class="btn">Button</a> -->
-                    </div>
-                  </div>
-               </nav> 
-            </header>
-        <!-- navbar section ends -->
-    <!-- header section ends -->
+        <header>
+            <nav>
+             <div class="navbar bg-base-100">
+                 <div class="navbar-start">
+                   <div class="dropdown">
+                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                     </div>
+                     <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                       <li class="Mono font-semibold text-xl btn m-2 bg-blue-500 text-white"><a>PHY</a></li>
+                       <li class="Mono font-semibold text-xl btn m-2 bg-blue-500 text-white"><a>CHEM</a></li>
+                       <li class="Mono font-semibold text-xl btn m-2 bg-blue-500 text-white"><a>MATH</a></li>
+                     </ul>
+                   </div>
+                   <a class="btn btn-ghost font-extrabold italic Mono text-4xl text-blue-500">TAM'S LIBRARY 
+                     <span class="text-red-600 ml-2">
+                         <i class="fa-regular fa-face-smile-wink"></i>
+                     </span>
+                   </a>
+                 </div>
+                 <div class="navbar-center hidden lg:flex">
+                   <ul class="menu menu-horizontal px-1">
+                     <li class="Mono font-semibold text-xl btn m-2 bg-blue-500 text-white"><a>PHY</a></li>
+                       <li class="Mono font-semibold text-xl btn m-2 bg-blue-500 text-white"><a>CHEM</a></li>
+                       <li class="Mono font-semibold text-xl btn m-2 bg-blue-500 text-white"><a>MATH</a></li>
+                   </ul>
+                 </div>
+                 <div class="navbar-end">
+                   <!-- <a class="btn">Button</a> -->
+                 </div>
+               </div>
+            </nav> 
+
+         </header>
+
+         <main class="my-4 md:my-40">
+             <div class="flex flex-col md:flex-row justify-center items-center gap-4 mx-auto">
+                 <!-- Physics -->
+                 <div class="card w-96 h-96 bg-base-100 shadow-xl image-full">
+                     <figure><img src="images/phy.jpg" alt="Shoes" /></figure>
+                     <div class="card-body">
+                       <h2 class="card-title raleway">Physics!</h2>
+                       <p class="Mono text-yellow-50">Learn physics to enjoy the beauty of science. Explore the wonders of the universe, where simple rules govern complex phenomena. Witness the elegance of nature's designs, revealing the awe-inspiring beauty of science.</p>
+                       <div class="card-actions justify-end">
+                         <button class="btn btn-outline  bg-gray-600 text-white font-semibold Mono">Lets Explore Interesting Theories</button>
+                       </div>
+                     </div>
+                   </div>
+
+                   <!-- chemistry -->
+                   <div class="card w-96 h-96 bg-base-100 shadow-xl image-full">
+                     <figure><img src="images/math.jpg" alt="Shoes" /></figure>
+                     <div class="card-body">
+                       <h2 class="card-title raleway">Math!</h2>
+                       <p class="text-yellow-50 Mono">Explore the power and the base of science. If you can solve maths, you can solve half two third problems of your life. Remeber practice makes a man perfect. Be confident and try as much as possible, cz every math obviusly have solutions somewhere. No need to fear</p>
+
+                       <div class="card-actions justify-end">
+                         <button class="btn btn-outline  bg-gray-600 text-white font-semibold Mono">Lets practice some maths</button>
+                       </div>
+                     </div>
+                   </div>
+
+                   <!-- math -->
+                   <div class="card w-96 h-96 bg-base-100 shadow-xl image-full">
+                     <figure><img src="images/chem.jpg" alt="Shoes" /></figure>
+                     <div class="card-body">
+                       <h2 class="card-title Mono">Chemistry!</h2>
+                       <p class="text-yellow-50 Mono">Discover the magic of chemistry, where tiny building blocks come together to create everything we see and touch. Watch as elements mingle and transform, creating vibrant colors and fascinating reactions.</p>
+
+                       <div class="card-actions justify-end">
+                         <button class="btn btn-outline bg-gray-600 text-white font-semibold Mono">Lets do some reactions</button>
+                       </div>
+                     </div>
+                   </div>
+             </div>
+         </main>
+     <!-- navbar section ends -->
+ <!-- header section ends -->
+    </div>
 </body>
 </html>
